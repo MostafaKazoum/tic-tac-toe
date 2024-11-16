@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/37c29caf4e.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+				<a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+			</div>
+            <div class="choices">
+                <h4>pick player 1's mark</h4>
+                <div class="marks">
+                    <div id="X" class="mark mark-x select">
+                        <img src="images/icon-x-default.png" alt="">
+                    </div>
+                    <div  id="O" class="mark mark-o">
+                        <img src="images/icon-o-default.png" alt="">
+                    </div>
+                </div>
+                <p>rember: x goes first</p>
+            </div>
+            <div class="btns">
+                <button class="new-game">new game</button>
+            </div>
+        </div>
+        <p class="thinking hide">Your Opponent is thinking <img src="images/loading.gif" alt=""></p>
+        <div class="game">
+            <div class="game-logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="turn">
+                <span id="turn">X's</span> turn
+            </div>
+            <div class="restart">
+                <img src="images/icon-restart.png" alt="">
+            </div>
+            <div class="board">
+                <div class="slot" id="slot0"><img src="images/" alt=""></div>
+                <div class="slot" id="slot1"><img src="images/" alt=""></div>
+                <div class="slot" id="slot2"><img src="images/" alt=""></div>
+                <div class="slot" id="slot3"><img src="images/" alt=""></div>
+                <div class="slot" id="slot4"><img src="images/" alt=""></div>
+                <div class="slot" id="slot5"><img src="images/" alt=""></div>
+                <div class="slot" id="slot6"><img src="images/" alt=""></div>
+                <div class="slot" id="slot7"><img src="images/" alt=""></div>
+                <div class="slot" id="slot8"><img src="images/" alt=""></div>
+            </div>
+            <div class="X-score">
+                <p>X <span class="user">(user)</span></p>
+                <h3>0</h3>
+            </div>
+            <div class="ties">
+                <p>ties</p>
+                <h3>0</h3>
+            </div>
+            <div class="O-score">
+                <p>O <span class="user">(user)</span></p>
+                <h3>0</h3>
+            </div>
+        </div>
+        <div class="gameover-screen hide">
+            <div class="window">
+                <div class="results">
+                    <h4>oh no,you lost</h4>
+                    <div class="winner">
+                        <img src="images/icon-o.png" alt="">
+                        <h1>Takes the round</h1>
+                    </div>
+                </div>
+                <div class="tied">
+                    <h1>round tied</h1>
+                </div>
+                <div class="gameover-btns">
+                    <button class="quit">quit</button>
+                    <button class="next-round">next round</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <i class="fa-solid fa-x"></i>
+    <i class="fa-regular fa-circle"></i> -->
+    <script src="app.js"></script>
+</body>
+</html>
